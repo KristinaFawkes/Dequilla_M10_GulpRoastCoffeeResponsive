@@ -1,0 +1,284 @@
+body {
+    background-color: #082B59;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
+  }
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+
+  }
+  /* make images flexible */
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  a {
+    color: #59331d;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  header {
+    border-bottom: 10px solid #d98555;
+  }
+  /* navbar styling */
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+  }
+  /* max width on the image in pixels */
+  nav .logo img {
+    max-width: 150px;
+  }
+  /* flex basis on the image container, li */
+  nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+
+  }
+  nav a:hover {
+    color: #d98555;
+  }
+  /* establishes a white background */
+  .main-bkgd {
+    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+  }
+  /* sits inside of the white background, centered */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+
+  
+  }
+  article {
+    flex-basis: 73%;
+    line-height: 2;
+    padding: 25px;
+  }
+  figure {
+    margin: 3rem 0 0 0;
+    flex-basis: 25%;
+    background-color: #59331d;
+    border-radius: 10px;
+    height: fit-content;
+    overflow: hidden;
+
+  }
+  figure img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 3000px;
+  }
+  figcaption {
+    color: #f2f2f2;
+    padding: 0.5rem;
+
+  }
+  .button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+  }
+  .button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+  }
+  footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
+  }
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  footer a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+/* About Us */
+
+@media (min-width: 1201px) {
+
+.grid-container {
+  display: flex;
+  flex-flow: row wrap;
+  grid-template-columns: 65% 35%; 
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+nav .logo {
+  text-align: start;
+  padding-left: 55px;
+
+}
+
+article {
+  line-height: 2;
+  padding: 25px;
+}
+figure {
+  margin: 3rem 0 0 0;
+  background-color: #59331d;
+  border-radius: 10px;
+  width: max-content;
+
+}
+          /* Home Page */
+          .photo {
+            position:relative;
+            background-color: #f2f2f2;
+            width:5000px;
+
+          
+          }
+          
+          .pourOver {
+            position: absolute;
+            top: 3%;
+            left: 3%;
+            color:#f2f2f2;
+          }
+
+
+}
+
+  @media (min-width: 601px) {
+    
+    .grid-container{
+      display: grid;
+  
+    }
+
+  .navBar{
+    display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:end;
+    }  
+    article {
+      flex-basis: 45%;
+      line-height: 2;
+      padding: 25px;
+    }
+    figure {
+      margin: 3rem 0 0 0;
+      background-color: #59331d;
+      border-radius: 10px;
+      flex-basis: 55%;
+    }
+          /* Home Page */
+          .photo {
+            position:relative;
+            background-color: #f2f2f2;
+            width:5000px;
+
+          
+          }
+          
+          .pourOver {
+            position: absolute;
+            bottom: 3%;
+            left: 3%;
+            color:#f2f2f2;
+            max-width: 300px;
+          }
+
+
+  }
+
+  @media (max-width: 600px) {
+
+    .grid-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+    }
+    article {
+      flex-basis: 100%;
+    }
+    figure {
+      flex-basis: auto;
+      background-color: #59331d;
+      border-radius: 10px;
+      max-width: 425px;
+
+    }
+    figure img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 315px;
+      width: auto;
+      overflow: hidden;
+    }
+
+  }
+
+  /* products page */
+
+
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-top: 30px;
+   
+
+
+  }
+
+  .photoBox {
+    object-fit: cover;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 10px;
+
+  }
+
+  .text {
+    padding: 20px;
+    height: auto;
+    align-content: center;
+
+  }
+
